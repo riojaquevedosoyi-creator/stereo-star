@@ -346,3 +346,21 @@ body {
   box-shadow: 0 0 18px #ff1680;
   transform: translateY(-3px);
 }
+
+/* PÁGINA DE DETALHES DOS ÁLBUNS */
+
+#detalhes-album {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #100810;
+  border: 2px solid var(--rosa);
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ff168050;
+  text-align: center;
+}
+.topo {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}

@@ -28,7 +28,7 @@
   <body>
     <!-- CABEÇALHO -->
     <header class="topo">
-      <div class="titulo-player">★ STEREO STAR ★</div>
+      <p class="titulo-player">★ STEREO STAR ★</p>
 
       <nav class="menu">
         <a href="index.html">INÍCIO</a>
@@ -60,99 +60,116 @@
       </section>
 
       <!-- ÁLBUNS -->
-      <section id="albuns" class="conteudo">
-        <h2>★ ALBUM COLLECTION ★</h2>
+      <section class="conteudo" id="albuns">
+        <h2>ÁLBUNS EM DESTAQUE</h2>
 
-        <p>Encontre seu próximo álbum favorito!</p>
-
-        <div class="container mt-5">
+        <div class="container">
           <div class="row g-4">
-            <!-- OK COMPUTER -->
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="card-album">
                 <img
                   src="imagens/ok-computer.jpg"
-                  alt="Capa do OK Computer"
+                  alt="Capa de OK Computer"
                   class="imagem-album"
                 />
                 <h4>OK Computer</h4>
                 <p>Radiohead</p>
-                <small>ALTERNATIVE ROCK • 1997</small>
+                <small>1997 • ALTERNATIVE ROCK</small>
                 <button class="botao-favorito" onclick="favoritar(this)">
                   ♡ FAVORITAR
                 </button>
+                <a
+                  href="album.html?album=ok-computer"
+                  class="btn btn-danger mt-2"
+                  >♫ VER ÁLBUM</a
+                >
               </div>
             </div>
 
-            <!-- WHITE PONY -->
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="card-album">
                 <img
                   src="imagens/white-pony.jpg"
-                  alt="Capa do White Pony"
+                  alt="Capa de White Pony"
                   class="imagem-album"
                 />
                 <h4>White Pony</h4>
                 <p>Deftones</p>
-                <small>ALTERNATIVE METAL • 2000</small>
+                <small>2000 • ALTERNATIVE METAL</small>
                 <button class="botao-favorito" onclick="favoritar(this)">
                   ♡ FAVORITAR
                 </button>
+                <a
+                  href="album.html?album=white-pony"
+                  class="btn btn-danger mt-2"
+                  >♫ VER ÁLBUM</a
+                >
               </div>
             </div>
 
-            <!-- AROUND THE FUR -->
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="card-album">
                 <img
                   src="imagens/around-the-fur.jpg"
-                  alt="Capa do Around the Fur"
+                  alt="Capa de Around the Fur"
                   class="imagem-album"
                 />
                 <h4>Around the Fur</h4>
                 <p>Deftones</p>
-                <small>ALTERNATIVE METAL • 1997</small>
+                <small>1997 • ALTERNATIVE METAL</small>
                 <button class="botao-favorito" onclick="favoritar(this)">
                   ♡ FAVORITAR
                 </button>
+                <a
+                  href="album.html?album=around-the-fur"
+                  class="btn btn-danger mt-2"
+                  >♫ VER ÁLBUM</a
+                >
               </div>
             </div>
 
-            <!-- ADRENALINE -->
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="card-album">
                 <img
                   src="imagens/adrenaline.jpg"
-                  alt="Capa do Adrenaline"
+                  alt="Capa de Adrenaline"
                   class="imagem-album"
                 />
                 <h4>Adrenaline</h4>
                 <p>Deftones</p>
-                <small>ALTERNATIVE METAL • 1995</small>
+                <small>1995 • ALTERNATIVE METAL</small>
                 <button class="botao-favorito" onclick="favoritar(this)">
                   ♡ FAVORITAR
                 </button>
+                <a
+                  href="album.html?album=adrenaline"
+                  class="btn btn-danger mt-2"
+                  >♫ VER ÁLBUM</a
+                >
               </div>
             </div>
 
-            <!-- DE CHAVA DELUXE -->
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="card-album">
                 <img
                   src="imagens/de-chava.jpg"
-                  alt="Capa do De Chava Deluxe"
+                  alt="Capa de De Chava Deluxe"
                   class="imagem-album"
                 />
                 <h4>De Chava (Deluxe)</h4>
                 <p>Yeri Mua</p>
-                <small>REGGAETON</small>
+                <small>2023 • LATIN</small>
                 <button class="botao-favorito" onclick="favoritar(this)">
                   ♡ FAVORITAR
                 </button>
+                <a
+                  href="album.html?album=de-chava-deluxe"
+                  class="btn btn-danger mt-2"
+                  >♫ VER ÁLBUM</a
+                >
               </div>
             </div>
 
-            <!-- CHUPON -->
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="card-album">
                 <img
@@ -162,61 +179,74 @@
                 />
                 <h4>Chupón</h4>
                 <p>Yeri Mua</p>
-                <small>REGGAETON • SINGLE</small>
+                <small>2024 • LATIN</small>
                 <button class="botao-favorito" onclick="favoritar(this)">
                   ♡ FAVORITAR
                 </button>
+                <a href="album.html?album=chupon" class="btn btn-danger mt-2"
+                  >♫ VER ÁLBUM</a
+                >
               </div>
             </div>
 
-            <!-- FEMME FATALE -->
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="card-album">
                 <img
                   src="imagens/femme-fatale.jpg"
-                  alt="Capa do Femme Fatale"
+                  alt="Capa de Femme Fatale"
                   class="imagem-album"
                 />
                 <h4>Femme Fatale</h4>
                 <p>Mon Laferte</p>
-                <small>POP ALTERNATIVE</small>
+                <small>2011 • POP ROCK</small>
                 <button class="botao-favorito" onclick="favoritar(this)">
                   ♡ FAVORITAR
                 </button>
+                <a
+                  href="album.html?album=femme-fatale"
+                  class="btn btn-danger mt-2"
+                  >♫ VER ÁLBUM</a
+                >
               </div>
             </div>
 
-            <!-- MON LAFERTE VOL. 1 -->
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="card-album">
                 <img
                   src="imagens/mon-laferte-vol1.jpg"
-                  alt="Capa do Mon Laferte Vol. 1"
+                  alt="Capa de Mon Laferte Vol. 1"
                   class="imagem-album"
                 />
                 <h4>Mon Laferte, Vol. 1</h4>
                 <p>Mon Laferte</p>
-                <small>POP • 2015</small>
+                <small>2015 • POP</small>
                 <button class="botao-favorito" onclick="favoritar(this)">
                   ♡ FAVORITAR
                 </button>
+                <a
+                  href="album.html?album=mon-laferte-vol-1"
+                  class="btn btn-danger mt-2"
+                  >♫ VER ÁLBUM</a
+                >
               </div>
             </div>
 
-            <!-- LA TRENZA -->
             <div class="col-12 col-sm-6 col-lg-4">
               <div class="card-album">
                 <img
                   src="imagens/la-trenza.jpg"
-                  alt="Capa do La Trenza"
+                  alt="Capa de La Trenza"
                   class="imagem-album"
                 />
                 <h4>La Trenza</h4>
                 <p>Mon Laferte</p>
-                <small>POP • 2017</small>
+                <small>2017 • LATIN POP</small>
                 <button class="botao-favorito" onclick="favoritar(this)">
                   ♡ FAVORITAR
                 </button>
+                <a href="album.html?album=la-trenza" class="btn btn-danger mt-2"
+                  >♫ VER ÁLBUM</a
+                >
               </div>
             </div>
           </div>
@@ -230,78 +260,80 @@
         <p>Explore diferentes artistas e estilos musicais!</p>
 
         <div class="artistas-lista">
-          <div class="artista">RADIOHEAD</div>
-          <div class="artista">DEFTONES</div>
-          <div class="artista">YERI MUA</div>
-          <div class="artista">LA SANTA GRIFA</div>
-          <div class="artista">MON LAFERTE</div>
-          <div class="artista">LUIS MIGUEL</div>
-          <div class="artista">GEORGE MICHAEL</div>
-          <div class="artista">ODETARI</div>
-          <div class="artista">G-EAZY</div>
-          <div class="artista">FUERZA REGIDA</div>
-          <div class="artista">MALUMA</div>
-          <div class="artista">ANUEL AA</div>
-          <div class="artista">OZUNA</div>
-          <div class="artista">IAN CORDOVA</div>
-          <div class="artista">DANI FLOW</div>
-          <div class="artista">MITSKI</div>
+          <a href="artistas.html" class="artista">RADIOHEAD</a>
+          <a href="artistas.html" class="artista">DEFTONES</a>
+          <a href="artistas.html" class="artista">YERI MUA</a>
+          <a href="artistas.html" class="artista">LA SANTA GRIFA</a>
+          <a href="artistas.html" class="artista">MON LAFERTE</a>
+          <a href="artistas.html" class="artista">LUIS MIGUEL</a>
+          <a href="artistas.html" class="artista">GEORGE MICHAEL</a>
+          <a href="artistas.html" class="artista">ODETARI</a>
+          <a href="artistas.html" class="artista">G-EAZY</a>
+          <a href="artistas.html" class="artista">FUERZA REGIDA</a>
+          <a href="artistas.html" class="artista">MALUMA</a>
+          <a href="artistas.html" class="artista">ANUEL AA</a>
+          <a href="artistas.html" class="artista">OZUNA</a>
+          <a href="artistas.html" class="artista">IAN CORDOVA</a>
+          <a href="artistas.html" class="artista">DANI FLOW</a>
+          <a href="artistas.html" class="artista">MITSKI</a>
 
-          <div class="artista">THE CURE</div>
-          <div class="artista">DEPECHE MODE</div>
-          <div class="artista">THE SMITHS</div>
-          <div class="artista">MY CHEMICAL ROMANCE</div>
-          <div class="artista">EVANESCENCE</div>
-          <div class="artista">PARAMORE</div>
-          <div class="artista">BRITNEY SPEARS</div>
-          <div class="artista">LADY GAGA</div>
-          <div class="artista">LANA DEL REY</div>
-          <div class="artista">AVRIL LAVIGNE</div>
-          <div class="artista">MADONNA</div>
-          <div class="artista">KALI UCHIS</div>
-          <div class="artista">BELINDA</div>
-          <div class="artista">JULIETA VENEGAS</div>
-          <div class="artista">NATHY PELUSO</div>
-          <div class="artista">BAD GYAL</div>
-          <div class="artista">CRYSTAL CASTLES</div>
-          <div class="artista">PASTEL GHOST</div>
-          <div class="artista">6ARELYHUMAN</div>
-          <div class="artista">MAREUX</div>
+          <a href="artistas.html" class="artista">THE CURE</a>
+          <a href="artistas.html" class="artista">DEPECHE MODE</a>
+          <a href="artistas.html" class="artista">THE SMITHS</a>
+          <a href="artistas.html" class="artista">MY CHEMICAL ROMANCE</a>
+          <a href="artistas.html" class="artista">EVANESCENCE</a>
+          <a href="artistas.html" class="artista">PARAMORE</a>
+          <a href="artistas.html" class="artista">BRITNEY SPEARS</a>
+          <a href="artistas.html" class="artista">LADY GAGA</a>
+          <a href="artistas.html" class="artista">LANA DEL REY</a>
+          <a href="artistas.html" class="artista">AVRIL LAVIGNE</a>
+          <a href="artistas.html" class="artista">MADONNA</a>
+          <a href="artistas.html" class="artista">KALI UCHIS</a>
+          <a href="artistas.html" class="artista">BELINDA</a>
+          <a href="artistas.html" class="artista">JULIETA VENEGAS</a>
+          <a href="artistas.html" class="artista">NATHY PELUSO</a>
+          <a href="artistas.html" class="artista">BAD GYAL</a>
+          <a href="artistas.html" class="artista">CRYSTAL CASTLES</a>
+          <a href="artistas.html" class="artista">PASTEL GHOST</a>
+          <a href="artistas.html" class="artista">6ARELYHUMAN</a>
+          <a href="artistas.html" class="artista">MAREUX</a>
 
-          <div class="artista">SODA STEREO</div>
-          <div class="artista">ROMEO SANTOS</div>
-          <div class="artista">TV GIRL</div>
-          <div class="artista">SADE</div>
-          <div class="artista">SEX PISTOLS</div>
-          <div class="artista">FOO FIGHTERS</div>
-          <div class="artista">THE CARPENTERS</div>
-          <div class="artista">KENIA OS</div>
-          <div class="artista">AYESHA EROTICA</div>
-          <div class="artista">CUPCAKKE</div>
-          <div class="artista">STEVE LACY</div>
-          <div class="artista">BAD BUNNY</div>
-          <div class="artista">QUEEN</div>
-          <div class="artista">KISS</div>
-          <div class="artista">STRAWBERRY GUY</div>
-          <div class="artista">ARIANA GRANDE</div>
-          <div class="artista">MAC MILLER</div>
-          <div class="artista">MAC DEMARCO</div>
-          <div class="artista">MÅNESKIN</div>
-          <div class="artista">THE MARÍAS</div>
-          <div class="artista">BLOOD ORANGE</div>
-          <div class="artista">MATT MARTIANS</div>
-          <div class="artista">MALCOLM TODD</div>
-          <div class="artista">CUCO</div>
-          <div class="artista">ROSALÍA</div>
-          <div class="artista">RAUW ALEJANDRO</div>
-          <div class="artista">GUSTAVO CERATI</div>
-          <div class="artista">OMAR APOLLO</div>
-          <div class="artista">PLAN B</div>
-          <div class="artista">YANDEL</div>
-          <div class="artista">REBZYXX</div>
-          <div class="artista">AGUA MARINA</div>
-          <div class="artista">EL LOBO Y LA SOCIEDAD PRIVADA</div>
-          <div class="artista">HERMANOS YAIPÉN</div>
+          <a href="artistas.html" class="artista">SODA STEREO</a>
+          <a href="artistas.html" class="artista">ROMEO SANTOS</a>
+          <a href="artistas.html" class="artista">TV GIRL</a>
+          <a href="artistas.html" class="artista">SADE</a>
+          <a href="artistas.html" class="artista">SEX PISTOLS</a>
+          <a href="artistas.html" class="artista">FOO FIGHTERS</a>
+          <a href="artistas.html" class="artista">THE CARPENTERS</a>
+          <a href="artistas.html" class="artista">KENIA OS</a>
+          <a href="artistas.html" class="artista">AYESHA EROTICA</a>
+          <a href="artistas.html" class="artista">CUPCAKKE</a>
+          <a href="artistas.html" class="artista">STEVE LACY</a>
+          <a href="artistas.html" class="artista">BAD BUNNY</a>
+          <a href="artistas.html" class="artista">QUEEN</a>
+          <a href="artistas.html" class="artista">KISS</a>
+          <a href="artistas.html" class="artista">STRAWBERRY GUY</a>
+          <a href="artistas.html" class="artista">ARIANA GRANDE</a>
+          <a href="artistas.html" class="artista">MAC MILLER</a>
+          <a href="artistas.html" class="artista">MAC DEMARCO</a>
+          <a href="artistas.html" class="artista">MÅNESKIN</a>
+          <a href="artistas.html" class="artista">THE MARÍAS</a>
+          <a href="artistas.html" class="artista">BLOOD ORANGE</a>
+          <a href="artistas.html" class="artista">MATT MARTIANS</a>
+          <a href="artistas.html" class="artista">MALCOLM TODD</a>
+          <a href="artistas.html" class="artista">CUCO</a>
+          <a href="artistas.html" class="artista">ROSALÍA</a>
+          <a href="artistas.html" class="artista">RAUW ALEJANDRO</a>
+          <a href="artistas.html" class="artista">GUSTAVO CERATI</a>
+          <a href="artistas.html" class="artista">OMAR APOLLO</a>
+          <a href="artistas.html" class="artista">PLAN B</a>
+          <a href="artistas.html" class="artista">YANDEL</a>
+          <a href="artistas.html" class="artista">REBZYXX</a>
+          <a href="artistas.html" class="artista">AGUA MARINA</a>
+          <a href="artistas.html" class="artista"
+            >EL LOBO Y LA SOCIEDAD PRIVADA</a
+          >
+          <a href="artistas.html" class="artista">HERMANOS YAIPÉN</a>
         </div>
       </section>
     </main>
