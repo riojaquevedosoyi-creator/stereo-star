@@ -1,0 +1,928 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Álbuns | STEREO STAR</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fonte pixelada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header class="topo">
+      <div class="titulo-player">★ STEREO STAR ★</div>
+
+      <nav class="menu">
+        <a href="index.html">INÍCIO</a>
+        <a href="albuns.html">ÁLBUNS</a>
+        <a href="artistas.html">ARTISTAS</a>
+        <a href="favoritos.html">FAVORITOS</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="albuns" class="conteudo">
+        <h2>★ ALBUM COLLECTION ★</h2>
+
+        <p>Encontre seu próximo álbum favorito!</p>
+
+        <div class="container mt-5">
+          <div class="row g-4">
+            <!-- OK COMPUTER -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/ok-computer.jpg"
+                  alt="Capa do OK Computer"
+                  class="imagem-album"
+                />
+
+                <h4>OK Computer</h4>
+                <p>Radiohead</p>
+                <small>ALTERNATIVE ROCK • 1997</small>
+
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- WHITE PONY -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/white-pony.jpg"
+                  alt="Capa do White Pony"
+                  class="imagem-album"
+                />
+
+                <h4>White Pony</h4>
+                <p>Deftones</p>
+                <small>ALTERNATIVE METAL • 2000</small>
+
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- AROUND THE FUR -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/around-the-fur.jpg"
+                  alt="Capa do Around the Fur"
+                  class="imagem-album"
+                />
+
+                <h4>Around the Fur</h4>
+                <p>Deftones</p>
+                <small>ALTERNATIVE METAL • 1997</small>
+
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- ADRENALINE -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/adrenaline.jpg"
+                  alt="Capa do Adrenaline"
+                  class="imagem-album"
+                />
+
+                <h4>Adrenaline</h4>
+                <p>Deftones</p>
+                <small>ALTERNATIVE METAL • 1995</small>
+
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- DE CHAVA DELUXE -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/de-chava.jpg"
+                  alt="Capa do De Chava Deluxe"
+                  class="imagem-album"
+                />
+
+                <h4>De Chava (Deluxe)</h4>
+                <p>Yeri Mua</p>
+                <small>REGGAETON</small>
+
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- CHUPON -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/chupon.jpg"
+                  alt="Capa de Chupón"
+                  class="imagem-album"
+                />
+
+                <h4>Chupón</h4>
+                <p>Yeri Mua</p>
+                <small>REGGAETON • SINGLE</small>
+
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- FEMME FATALE -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/femme-fatale.jpg"
+                  alt="Capa do Femme Fatale"
+                  class="imagem-album"
+                />
+
+                <h4>Femme Fatale</h4>
+                <p>Mon Laferte</p>
+                <small>POP ALTERNATIVE</small>
+
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- MON LAFERTE VOL. 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/mon-laferte-vol1.jpg"
+                  alt="Capa do Mon Laferte Vol. 1"
+                  class="imagem-album"
+                />
+
+                <h4>Mon Laferte, Vol. 1</h4>
+                <p>Mon Laferte</p>
+                <small>POP • 2015</small>
+
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- LA TRENZA -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/la-trenza.jpg"
+                  alt="Capa do La Trenza"
+                  class="imagem-album"
+                />
+
+                <h4>La Trenza</h4>
+                <p>Mon Laferte</p>
+                <small>POP • 2017</small>
+
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- AMERICA -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/america.jpg"
+                  alt="Capa do America"
+                  class="imagem-album"
+                />
+                <h4>America</h4>
+                <p>America</p>
+                <small>ROCK</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- AM -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/am.jpg"
+                  alt="Capa do AM"
+                  class="imagem-album"
+                />
+                <h4>AM</h4>
+                <p>Arctic Monkeys</p>
+                <small>INDIE ROCK • 2013</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- UN VERANO SIN TI -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/un-verano-sin-ti.jpg"
+                  alt="Capa do Un Verano Sin Ti"
+                  class="imagem-album"
+                />
+                <h4>Un Verano Sin Ti</h4>
+                <p>Bad Bunny</p>
+                <small>REGGAETON • 2022</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- TWILIGHT -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/twilight.jpg"
+                  alt="Capa do Twilight"
+                  class="imagem-album"
+                />
+                <h4>Twilight</h4>
+                <p>Bôa</p>
+                <small>ALTERNATIVE ROCK</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- CLOSE TO YOU -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/close-to-you.jpg"
+                  alt="Capa do Close to You"
+                  class="imagem-album"
+                />
+                <h4>Close to You</h4>
+                <p>Carpenters</p>
+                <small>POP • 1970</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- CRY -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/cry.jpg"
+                  alt="Capa do Cry"
+                  class="imagem-album"
+                />
+                <h4>Cry</h4>
+                <p>Cigarettes After Sex</p>
+                <small>DREAM POP • 2019</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- CURRENTS -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/currents.jpg"
+                  alt="Capa do Currents"
+                  class="imagem-album"
+                />
+                <h4>Currents</h4>
+                <p>Tame Impala</p>
+                <small>PSYCHEDELIC POP • 2015</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- EL DORADO -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/el-dorado.jpg"
+                  alt="Capa do El Dorado"
+                  class="imagem-album"
+                />
+                <h4>El Dorado</h4>
+                <p>Shakira</p>
+                <small>LATIN POP • 2017</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- FRENCH EXIT -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/french-exit.jpg"
+                  alt="Capa do French Exit"
+                  class="imagem-album"
+                />
+                <h4>French Exit</h4>
+                <p>TV Girl</p>
+                <small>INDIE POP • 2014</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- LADIES & GENTLEMEN -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/ladies-gentlemen.jpg"
+                  alt="Capa do Ladies & Gentlemen"
+                  class="imagem-album"
+                />
+                <h4>Ladies & Gentlemen</h4>
+                <p>George Michael</p>
+                <small>POP • 1998</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- GRACE -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/grace.jpg"
+                  alt="Capa do Grace"
+                  class="imagem-album"
+                />
+                <h4>Grace</h4>
+                <p>Jeff Buckley</p>
+                <small>ALTERNATIVE ROCK • 1994</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- LOVE DELUXE -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/love-deluxe.jpg"
+                  alt="Capa do Love Deluxe"
+                  class="imagem-album"
+                />
+                <h4>Love Deluxe</h4>
+                <p>Sade</p>
+                <small>SOUL • 1992</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- DEATH OF A PARTY GIRL -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/death-of-a-party-girl.jpg"
+                  alt="Capa do Death of a Party Girl"
+                  class="imagem-album"
+                />
+                <h4>Death of a Party Girl</h4>
+                <p>TV Girl</p>
+                <small>INDIE POP • 2018</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- FLOWER BOY -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/flower-boy.jpg"
+                  alt="Capa do Flower Boy"
+                  class="imagem-album"
+                />
+                <h4>Flower Boy</h4>
+                <p>Tyler, The Creator</p>
+                <small>HIP-HOP • 2017</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- HERE COMES THE COWBOY -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/here-comes-the-cowboy.jpg"
+                  alt="Capa do Here Comes the Cowboy"
+                  class="imagem-album"
+                />
+                <h4>Here Comes the Cowboy</h4>
+                <p>Mac DeMarco</p>
+                <small>INDIE ROCK • 2019</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- DEATHMENTAL -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/death-metal.jpg"
+                  alt="Capa do Deathmental"
+                  class="imagem-album"
+                />
+                <h4>Deathmental</h4>
+                <p>Pachiko</p>
+                <small>ALBUM</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- BROKEN GIRL -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/broken-girl.jpg"
+                  alt="Capa do Broken Girl"
+                  class="imagem-album"
+                />
+                <h4>Broken Girl</h4>
+                <p>Julie</p>
+                <small>ALBUM</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- EUPHORIA OF SELF-DESTRUCTION -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/euphoria-of-self-destruction.jpg"
+                  alt="Capa do Euphoria of Self-Destruction"
+                  class="imagem-album"
+                />
+                <h4>Euphoria of Self-Destruction</h4>
+                <p>Blade and Bath</p>
+                <small>ALBUM</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- THE GOLD EXPERIENCE -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/the-gold-experience.jpg"
+                  alt="Capa do The Gold Experience"
+                  class="imagem-album"
+                />
+                <h4>The Gold Experience</h4>
+                <p>Prince</p>
+                <small>R&B • 1995</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- DYNASTY -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/dynasty.jpg"
+                  alt="Capa do Dynasty"
+                  class="imagem-album"
+                />
+                <h4>Dynasty</h4>
+                <p>KISS</p>
+                <small>HARD ROCK • 1979</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- ODISEA -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/odisea.jpg"
+                  alt="Capa do Odisea"
+                  class="imagem-album"
+                />
+                <h4>Odisea</h4>
+                <p>Ozuna</p>
+                <small>LATIN URBAN • 2017</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- PRIMERA MUSA -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/primera-musa.jpg"
+                  alt="Capa do Primera Musa"
+                  class="imagem-album"
+                />
+                <h4>Primera Musa</h4>
+                <p>Omar Courtz</p>
+                <small>LATIN URBAN • 2024</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- COSA NUESTRA -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/cosa-nuestra.jpg"
+                  alt="Capa do Cosa Nuestra"
+                  class="imagem-album"
+                />
+                <h4>Cosa Nuestra</h4>
+                <p>Rauw Alejandro</p>
+                <small>LATIN R&B • 2024</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- DATA -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/data.jpg"
+                  alt="Capa do DATA"
+                  class="imagem-album"
+                />
+                <h4>DATA</h4>
+                <p>Tainy</p>
+                <small>REGGAETON • 2023</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- JOSE -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/jose.jpg"
+                  alt="Capa do José"
+                  class="imagem-album"
+                />
+                <h4>José</h4>
+                <p>J Balvin</p>
+                <small>LATIN POP • 2021</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- ENERGIA -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/energia.jpg"
+                  alt="Capa do Energía"
+                  class="imagem-album"
+                />
+                <h4>Energía</h4>
+                <p>J Balvin</p>
+                <small>REGGAETON • 2016</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- ROMANCE -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/romance.jpg"
+                  alt="Capa do Romance"
+                  class="imagem-album"
+                />
+                <h4>Romance</h4>
+                <p>Luis Miguel</p>
+                <small>LATIN POP • 1991</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- ORIGINALES 20 EXITOS -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/originales-20-exitos.jpg"
+                  alt="Capa do Originales 20 Éxitos"
+                  class="imagem-album"
+                />
+                <h4>Originales – 20 Éxitos</h4>
+                <p>Jeanette</p>
+                <small>POP • COMPILATION</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- THE SHOW AFTER PARTY -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/the-show-after-party.jpg"
+                  alt="Capa do The Show, the After Party, the Hotel"
+                  class="imagem-album"
+                />
+                <h4>The Show, the After Party, the Hotel</h4>
+                <p>Jodeci</p>
+                <small>R&B • 1995</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- PRETTY BOY DIRTY BOY -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/pretty-boy-dirty-boy.jpg"
+                  alt="Capa do Pretty Boy Dirty Boy"
+                  class="imagem-album"
+                />
+                <h4>Pretty Boy, Dirty Boy</h4>
+                <p>Maluma</p>
+                <small>LATIN POP • 2015</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- MALA MIA -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/mala-mia.jpg"
+                  alt="Capa do Mala Mía"
+                  class="imagem-album"
+                />
+                <h4>Mala Mía</h4>
+                <p>Fuerza Regida</p>
+                <small>REGIONAL MEXICAN</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- MIS MANOS -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/mis-manos.jpg"
+                  alt="Capa do Mis Manos"
+                  class="imagem-album"
+                />
+                <h4>Mis Manos</h4>
+                <p>Camilo</p>
+                <small>LATIN POP • 2021</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- HOMERUN -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/homerun.jpg"
+                  alt="Capa do Homerun"
+                  class="imagem-album"
+                />
+                <h4>Homerun</h4>
+                <p>Paulo Londra</p>
+                <small>LATIN TRAP • 2019</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- STONE COLD CLASSICS -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/stone-cold-classics.jpg"
+                  alt="Capa do Stone Cold Classics"
+                  class="imagem-album"
+                />
+                <h4>Stone Cold Classics</h4>
+                <p>Queen</p>
+                <small>ROCK • COMPILATION</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- 3X3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/3x3.jpg"
+                  alt="Capa do 3x3"
+                  class="imagem-album"
+                />
+                <h4>3x3</h4>
+                <p>Odetari</p>
+                <small>ALTERNATIVE • SINGLE</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- DICE AND ROLL -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/dice-and-roll.jpg"
+                  alt="Capa do Dice and Roll"
+                  class="imagem-album"
+                />
+                <h4>Dice and Roll</h4>
+                <p>Odetari</p>
+                <small>HYPERPOP • SINGLE</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- THESE THINGS HAPPEN -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/these-things-happen.jpg"
+                  alt="Capa do These Things Happen"
+                  class="imagem-album"
+                />
+                <h4>These Things Happen</h4>
+                <p>G-Eazy</p>
+                <small>HIP-HOP • 2014</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- ANXIETY -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/anxiety.jpg"
+                  alt="Capa do Anxiety"
+                  class="imagem-album"
+                />
+                <h4>Anxiety</h4>
+                <p>G-Eazy</p>
+                <small>HIP-HOP</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- ULTRAVIOLENCE -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/ultraviolence.jpg"
+                  alt="Capa do Ultraviolence"
+                  class="imagem-album"
+                />
+                <h4>Ultraviolence</h4>
+                <p>Lana Del Rey</p>
+                <small>ALTERNATIVE POP • 2014</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- WE FELL IN LOVE IN OCTOBER -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/we-fell-in-october.jpg"
+                  alt="Capa do We Fell in Love in October"
+                  class="imagem-album"
+                />
+                <h4>We Fell in Love in October</h4>
+                <p>girl in red</p>
+                <small>INDIE POP • SINGLE</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+
+            <!-- SWEET BOY -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/sweet-boy.jpg"
+                  alt="Capa do Sweet Boy"
+                  class="imagem-album"
+                />
+                <h4>Sweet Boy</h4>
+                <p>Malcolm Todd</p>
+                <small>INDIE POP</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+            <!-- BACK TO ME -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card-album">
+                <img
+                  src="imagens/back-to-me.jpg"
+                  alt="Capa do Back to Me"
+                  class="imagem-album"
+                />
+                <h4>Back to Me</h4>
+                <p>The Marías</p>
+                <small>INDIE POP</small>
+                <button class="botao-favorito" onclick="favoritar(this)">
+                  ♡ FAVORITAR
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>★ STEREO STAR © 2026 ★</p>
+      <p>YOUR MUSIC, YOUR WORLD!</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

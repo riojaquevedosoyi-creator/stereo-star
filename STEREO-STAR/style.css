@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --rosa: #ff1680;
+  --rosa-claro: #f7a0c6;
+  --preto: #080508;
+  --branco: #ffffff;
+}
+
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+  background: var(--preto);
+  color: var(--branco);
+  min-height: 100vh;
+}
+
+/* CABEÇALHO */
+
+.topo {
+  background: linear-gradient(to bottom, #ff75ad, #d90060, #850039);
+  border: 3px solid #ffb4d2;
+  padding: 22px;
+  box-shadow: 0 4px 12px #00000080;
+}
+
+.titulo-player {
+  text-align: center;
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  color: white;
+  text-shadow: 3px 3px 3px #70002f;
+  margin-bottom: 25px;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: #ffe0ed;
+  text-decoration: underline;
+}
+
+/* CAPA */
+
+.apresentacao {
+  min-height: 650px;
+  background-image: url("capa.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* TEXTO DA CAPA */
+
+.texto-apresentacao {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 40px;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0 25px var(--rosa);
+  max-width: 750px;
+}
+
+.subtitulo {
+  color: var(--rosa-claro);
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.texto-apresentacao h1 {
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  font-size: 25px;
+  line-height: 1.8;
+  text-shadow: 3px 3px var(--rosa);
+  margin-bottom: 25px;
+}
+
+.descricao {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* BOTÃO */
+
+.botao-explorar {
+  display: inline-block;
+  background: var(--rosa);
+  color: white;
+  padding: 16px 22px;
+  margin-top: 20px;
+  text-decoration: none;
+  border: 2px solid white;
+  font-weight: bold;
+  box-shadow: 0 0 12px var(--rosa);
+  transition: 0.3s;
+}
+
+.botao-explorar:hover {
+  background: white;
+  color: var(--rosa);
+  transform: scale(1.05);
+}
+
+/* ÁLBUNS */
+
+.conteudo {
+  background: #100810;
+  text-align: center;
+  padding: 70px 20px;
+  border-top: 3px solid var(--rosa);
+}
+
+.conteudo h2 {
+  font-family: "Press Start 2P", cursive;
+  color: var(--rosa);
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* RODAPÉ */
+
+.rodape {
+  background: linear-gradient(to bottom, #d90060, #70002f);
+  border-top: 2px solid #ffb4d2;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  font-size: 12px;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .titulo-player {
+    font-size: 14px;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .apresentacao {
+    min-height: 550px;
+  }
+
+  .texto-apresentacao {
+    padding: 25px 15px;
+  }
+
+  .texto-apresentacao h1 {
+    font-size: 16px;
+  }
+
+  .subtitulo {
+    font-size: 9px;
+  }
+
+  .conteudo h2 {
+    font-size: 15px;
+  }
+}
+/* CARDS DOS ÁLBUNS */
+.card-album {
+  background: linear-gradient(to bottom, #250d20, #100810);
+  border: 2px solid var(--rosa);
+  border-radius: 12px;
+  padding: 15px;
+  color: white;
+  box-shadow: 0 0 12px #ff168050;
+  transition: 0.3s;
+}
+
+.card-album:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px var(--rosa);
+}
+
+.capa-album {
+  height: 230px;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 18px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.capa-album span {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.capa-album h3 {
+  font-family: "Press Start 2P", cursive;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.capa-um {
+  background: linear-gradient(135deg, #ff91bd, #a50050, #310020);
+}
+
+.capa-dois {
+  background: linear-gradient(135deg, #222, #a80036, #050505);
+}
+
+.capa-tres {
+  background: linear-gradient(135deg, #f3a0c7, #8d2761, #230c2c);
+}
+
+.card-album h4 {
+  color: var(--rosa-claro);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-album p {
+  margin-bottom: 5px;
+}
+
+.card-album small {
+  color: #ff8fbd;
+  letter-spacing: 2px;
+}
+
+/* NOVAS CAPAS DOS ÁLBUNS */
+
+.capa-cinco {
+  background: linear-gradient(135deg, #ff9bc9, #a50062, #360020);
+}
+
+.capa-seis {
+  background: linear-gradient(135deg, #ff1680, #720044, #180014);
+}
+
+.capa-sete {
+  background: linear-gradient(135deg, #9b426c, #25101e, #080508);
+}
+
+.capa-oito {
+  background: linear-gradient(135deg, #c75b7f, #6e183c, #190914);
+}
+
+.capa-nove {
+  background: linear-gradient(135deg, #d89b9e, #8c3d54, #28101e);
+}
+
+/* IMAGENS DOS ÁLBUNS */
+.imagem-album {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 3px solid white;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  box-shadow: 0 0 12px #ff168080;
+  transition: 0.3s;
+}
+
+.card-album:hover .imagem-album {
+  transform: scale(1.03);
+}
+
+/* SEÇÃO DE ARTISTAS */
+.artistas-lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.artista {
+  background: linear-gradient(to bottom, #ff75ad, #a90050, #50002c);
+  color: white;
+  border: 2px solid #ffb4d2;
+  border-radius: 8px;
+  padding: 18px 22px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+  box-shadow: 0 0 10px #ff168050;
+  transition: 0.3s;
+}
+
+.artista:hover {
+  background: white;
+  color: #d90060;
+  transform: translateY(-5px);
+  box-shadow: 0 0 18px var(--rosa);
+}
+.botao-favorito {
+  display: block;
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px;
+
+  background: linear-gradient(to bottom, #ff8cbd, #e60070);
+  color: white;
+
+  border: 2px solid #ffc1dc;
+  border-radius: 8px;
+
+  font-family: Tahoma, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  box-shadow: 0 0 10px #ff168080;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-favorito:hover {
+  background: white;
+  color: #e60070;
+  box-shadow: 0 0 18px #ff1680;
+  transform: translateY(-3px);
+}
